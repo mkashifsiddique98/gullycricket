@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
+    "install:all": "npm install && cd frontend && npm install",
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "cd frontend && npm run dev",
