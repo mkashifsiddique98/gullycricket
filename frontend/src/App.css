@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Login and Register Page header Title style */
+
+
+.header-title-style {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(gold, gold);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+.header-title-style:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+  overflow-y: scroll;
+  display: inline-block;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.15));
+  border: 3px solid rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(left, rgba(0,0,0,0.3), rgba(0,0,0,0.4));
+}
+
